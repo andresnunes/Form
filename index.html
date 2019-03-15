@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Survey Form</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="title" class="title">Formulario Teatro IDE</h1>
+		</header>
+		<article class="container">
+			<p id="description" class="description">Queremos saber um pouco sobre você!</p>
+			<form id="survey-form">
+				<div class="element">
+					<label id="name-label" for="name">Nome</label>
+					<input type="text" id="name" class="field-input" placeholder="Escreva seu Nome" maxlength="30" autofocus required > <!--put placeholder text-->
+				</div>
+				<div class="element">
+					<label id="email-label" for="email">Email</label>
+					<input type="email" class="field-input"  id="email" placeholder="Escreva seu email" required>
+				</div>
+				<div class="element">
+					<label id="number-label" class="field=input" >Idade</label>
+					<input type="number" id="age" class="field-input" placeholder="Escreva sua Idade" min="10" max="100" required> <!--define an min and max atrributes-->
+				</div>
+				<div class="element">
+					<label for="dropdown">Você trabalha ou estuda atuamente ?</label>
+					<select id="dropdown" class="dropdown">	
+						<option value="trabalha-integral">Trabalha periodo integral</option>
+						<option value="trabalha-meio_periodo">Trabalha meio periodo</option>
+						<option value="estuda-integral">Estuda periodo integral</option>
+						<option value="estuda-meio_periodo">Estuda meio periodo</option>
+						<option value="meio_periodo-Estudo-Trabalho">Trabalha e Estuda</option>
+						<option value="nada">Não trabalha nem estuda</option>
+					</select>
+				</div>
+				<div div="element">
+					<p class="radio-descrition">Deseja receber notificações sobre eventos e planos do Teatro?</p>
+					<input id="radio-yes" type="radio" name="recive-email" value="yes" checked>
+					<label class="radio-lable" for="radio-yes">
+					Sim
+					</label>
+					
+					<input id="radio-no" type="radio"name="recive-email" value="no">			
+					<label class="radio-lable" for="radio-yes">
+					Não
+					</label>
+				</div>
+				<div class="element">
+					<label class="textarea-lable">Contenos algo que você gosta de fazer, ou gostaria de fazer:</label>
+					<textarea id="textarea" class="textarea" rows="6" cols="50" placeholder="Escreva seu comentário aqui"></textarea>
+				</div>
+				<div class="submit-element">
+					<input id="submit" class="button" type="submit" value="Submit">
+				</div>
+			</form>
+		</article>
+		<footer>
+			<p>Obrigado pelo seu tempo e suas repostas!</p>
+		</footer>
+	</body>
+</html>
